@@ -1,4 +1,4 @@
-"use client"
+"use client"  // add this line for client component
 import { useState } from "react"
 
 export const Counter = () => {
