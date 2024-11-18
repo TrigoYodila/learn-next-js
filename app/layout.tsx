@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Navigation } from "@/components/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header>Welcome to next js 15 Crash Course</header>
+        {/* <header>Welcome to next js 15 Crash Course</header> */}
+        <Navigation />
         {children}
         <footer>Code evolution with trigo</footer>
       </body>
